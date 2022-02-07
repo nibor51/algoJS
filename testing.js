@@ -55,9 +55,9 @@ function splitArray(array) {
 }
 
 // create a function to return all new positions of the position array after the changes of the changements array
-function newPositions(nbChanges, position, changements) {
+function newPositions( position, changements) {
     let newPositions = position
-    for (let i = 0; i < nbChanges; i++) {
+    for (let i = 0; i < changements.length; i++) {
         let temp = newPositions[changements[i][0]]
         newPositions[changements[i][0]] = newPositions[changements[i][1]]
         newPositions[changements[i][1]] = temp
@@ -68,4 +68,4 @@ function newPositions(nbChanges, position, changements) {
 
 var split = splitArray(string)
 console.log(split);
-console.log(newPositions(string[1], split[0], split[1]));
+console.log(newPositions(split[0], split[1]));
