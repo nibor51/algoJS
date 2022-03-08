@@ -1,4 +1,7 @@
-let prenoms = 'leo lea'.toUpperCase();
+let firstPrenoms = prompt("Entrez un premier prénom");
+let secondPrenoms = prompt("Entrez un second prénom");
+let prenoms = firstPrenoms + " " + secondPrenoms;
+prenoms =  prenoms.toUpperCase();
 let names = prenoms.split(' '); // https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/String/split
 let resultat = ""
 
